@@ -4,6 +4,7 @@
 }
 .navbar{
     position:sticky;
+    z-index: 99;
 }
 .active-page {
     text-decoration:underline;
@@ -42,7 +43,7 @@ body{
     font-family:sans-serif;
     text-align:center;
 }
-.btn {
+.btn-main {
     border-width:2px;
     border-color:white;
     color:white;
@@ -50,7 +51,7 @@ body{
     border-radius:20px;
     text-align:center;
 }
-.btn:hover{
+.btn-main:hover{
     color:white;
     background-color:rgba(225,225,225,0.45);
 }
@@ -94,10 +95,13 @@ body{
     width:800px;
     height:500px;
     margin:auto;
+    max-width:100%;
 }
 .c-div{
     width:800px;
     height:500px;
+    max-width:100%;
+    max-height:5%;
     margin:auto;
     margin-top:10px;
     margin-bottom:50px;
@@ -126,9 +130,8 @@ a:hover span {
     height:120px;
     margin-top:40px;
 }
-.card-body, .card-footer, .card-header{
-    margin-left:0;
-    margin-right:0;
+.card-text{
+    margin-top:5px;
 }
 .display-4 {
     font-weight:bold;
@@ -139,11 +142,30 @@ a:hover span {
 .name-title {
     font-weight:bold;
 }
-.pfp {
-    height:100px;
-    width:100px;
-    margin:0 auto;
-}
 .tcenter {
     text-align: center;
+}
+.tbdiv {
+    padding:10px;
+}
+.card-body > .btn-warning {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.subutton {
+    border:solid;
+    border-color:skyblue;
+    color:skyblue;
+    font-weight:bold;
+    background-color: white;
+}
+.name-card {
+    padding:40px;
 }

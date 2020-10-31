@@ -57,81 +57,147 @@
                 </div>
                 <div class="gradient-bg row"> <!--TODO: Figure out why it doesn't fill-->
                     <div class="center-div">
-                        <div class="title-text">WELCOME MACHINE LEARNERS</div>
-                        <div class="description">description</div>
+                        <div class="title-text">TBS MACHINE LEARNING CLUB</div>
+                        <br />
+                        <div class="description">A place for machine learning enthusiasts.</div>
                         <div class="extra-space"></div>
                         <div class="row">
-                            <button class="btn m-auto" onclick="document.location='#info'">Explore</button>
-                            <button class="btn m-auto" onclick="document.location='#sign-up'">Join Us</button>
+                            <button class="btn-main btn m-auto" onclick="document.location='#info'">Explore</button>
+                            <button class="btn-main btn m-auto" onclick="document.location='#sign-up'">Join Us</button>
                         </div>
                         <!--TODO: Figure out centering buttons-->
                     </div>
-                </div>
-                <div class="section" id="info">
-                    <div class="row row-m-t-b"> <!--TODO: Figure out how to get margins-->
-                        <div class="m-auto col-md-5 card-sec row">
-                            <div class="paragraph col-md-8">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                            <div class="col-md-4">
-                                <img src="rsc/dummy.jpg" alt="dummy" class="small-img ml-auto mr-auto">
+                </div>  
+                <div class="section container" id="info">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="card">
+                                <img class="card-img-top" src="rsc/google-dream.jpg" alt="Google Dream">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lectures</h5>
+                                    <div class="card-text">
+                                        Weekly lectures on basics of Machine Learning
+                                        and more advanced techniques such as CNNs,
+                                        VAEs, GANs, Transformers and more.
+                                    </div>
+                                    <br />
+                                    <button onclick="document.location='presentations.html'" class="btn btn-warning">
+                                        Find Presentations
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="m-auto col-md-5 card-sec">
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
+                        <div class="col-lg">
+                            <div class="card">
+                                <img class="card-img-top" src="rsc/guest-speaker.jpg" alt="Guest Speaker">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guest Speakers</h5>
+                                    <div class="card-text">
+                                        Guest lectures on state-of-the-art technology
+                                        by researchers and workers in the industry.
+                                    </div>
+                                    <br />
+                                    <button onclick="document.location='#'" class="btn btn-warning">
+                                        Previous Speakers
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="card">
+                                <img class="card-img-top" src="rsc/competitions.png" alt="Competitions">
+                                <div class="card-body">
+                                    <h5 class="card-title">Competitions</h5>
+                                    <div class="card-text">
+                                        Frequent in club competitions on previous
+                                        lecture information for extra on-hand practice.
+                                        Prizes available!!
+                                    </div>
+                                    <br />
+                                    <button onclick="document.location='resources.html\#comp'" class="btn btn-warning">
+                                        Competitions
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="card">
+                                <img class="card-img-top" src="rsc/cool_stuff.jpg" alt="Competitions">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cool Insights</h5>
+                                    <div class="card-text">
+                                        Interesting stories, papers, findings and 
+                                        articles on Machine Learning and AI will be
+                                        featured on the website.
+                                    </div>
+                                    <br />
+                                    <button onclick="document.location='latest.html'" class="btn btn-warning">
+                                        Articles
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row row-m-t-b">
-                        <!--TODO: Figure out how to get margins-->
-                        <div class="m-auto col-md-5 card-sec">
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        </div>
-                        <div class="m-auto col-md-5 card-sec">
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                            CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        </div>
-                    </div>
                 </div>
+                
                 <div class="bg-light section row">
+                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
+                    <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10 ml-auto mr-auto">
+                        <h3 class="hcenter">WELCOME TO TBS MACHINE LEARNING</h3>
+                        <br />
+                        <div class="tcenter" style="color:#777777">
+                            Do you want to learn what's behind all this hype around AI? Do you want to develop a program that differentiate between
+                            plant species? Are you interested in how Google Translate works? If so, come check out our club. We will hold weekly
+                            lectures and activities. We will explore topics such as back propagation, CNN, Regression, Linear Algebra, GANs, VAEs,
+                            PCA and etc.
+                        </div>
+                        <br />
+                        <div class="tcenter" style="font-weight:bold">
+                            No experience or knowledge is required.
+                        </div>
+                        <div class="tcenter">
+                            <span style="font-weight:bold; color:teal">MEETING TIME:</span>
+                            1:00-1:30 A-Days
+                        </div>
+                        <div class="tcenter">
+                            <span style="font-weight:bold; color:teal">ZOOM LINK:</span>
+                            <a href = "https://zoom.us/test" style="color:lightskyblue">https://zoom.us/test</a>
+                        </div>
+                        <div class="tcenter">
+                            <span style="font-weight:bold; color:teal">ZOOM ID:</span>
+                            123456789
+                        </div>
+                        <div class="tcenter">
+                            <span style="font-weight:bold; color:teal">ZOOM PWD:</span>
+                            0123456
+                        </div>
+                        <div class="tcenter">
+                            <span style="font-weight:bold; color:teal">LOCATION:</span>
+                            Online
+                        </div>
+                        <br />
+                        <div class="tcenter">
+                            This website will contain all previous <a href="notes.html">notes</a>, 
+                            <a href="presentations.html">presentations</a> and <a href="resources.html">resources</a>
+                            discussed in club meetings. It will also inform members of scheduled events and updates.
+                        </div>
+                        <br />
+                        <form action="https://forms.gle/7LkFxRMY7H7yiRVx9">
+                            <button class="button hcenter p-2 subutton">
+                                SIGN UP FORM
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
+                </div>
+                <!-- <div class="section row">
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 ml-auto mr-auto">
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum veritatis itaque autem eum reprehenderit a eius vel? Eum deserunt pariatur quas iste, natus ut illo dolore reprehenderit ipsum eveniet tempora sapiente amet id incidunt deleniti, et assumenda dicta similique. Officia nostrum natus autem nobis libero porro, voluptatum necessitatibus numquam aut veniam? Adipisci perferendis atque nemo, unde aspernatur a quia reiciendis provident voluptatem harum itaque voluptatibus modi voluptas repudiandae, dicta soluta. Amet, doloribus eos. Non eius laborum fugit fuga temporibus. Earum obcaecati voluptates ipsam similique. Veritatis accusantium ex reprehenderit, odio cumque, quidem iste modi ratione illum ipsum distinctio? At blanditiis nemo deleniti dignissimos eum. Tempora id rem praesentium exercitationem pariatur quasi minima in corporis atque perspiciatis voluptates impedit, distinctio asperiores quo vel? Ex eveniet, itaque excepturi necessitatibus repellendus nobis veritatis et nemo maxime magni iste ut, aliquam sit laudantium repellat dignissimos numquam beatae eum, tempore sapiente animi? Nesciunt, consequatur, a adipisci nam doloremque harum, perspiciatis reprehenderit eum reiciendis debitis odit sint hic? Quos minima obcaecati cum consectetur molestiae voluptate explicabo quisquam dolorem harum asperiores placeat ratione sunt ipsam, quas aut sapiente qui labore. Explicabo illo necessitatibus facilis, iure voluptatibus fugit? A error hic ad doloribus officiis natus maiores, sed inventore quia?
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
-                </div>
-                <div class="section row">
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 ml-auto mr-auto">
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                        CONTENT CONTENT CONTENT CONTENTCONTENT CONTENT CONTENT CONTENT
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
-                </div>
-                <div class="bg-light section row" id="sign-up">
+                </div> -->
+                <div class="section row" id="sign-up">
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
                     <iframe src="https://forms.gle/7LkFxRMY7H7yiRVx9" class="col-xl-8 col-lg-8 col-md-8 
                     col-sm-10 ml-auto mr-auto" style="height:500px"></iframe>
