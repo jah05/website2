@@ -1,219 +1,247 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>TBS Machine Learning Club</title>
+    <head>
+        <title>ML Club - Latest</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="icon" href="rsc/favicon.ico">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css" />
 
-    <link rel="stylesheet" href="styles.css" />
+        <meta charset="utf-8">
+        <meta name="keywords" content="ML, AI, Club, Bishops, TBS">
+        <meta name="description" content="TBS Machine Learning Club">
+        <meta name="author" content="James H.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-    <meta charset="utf-8">
-    <meta name="keywords" content="ML, AI, Club, Bishops, TBS">
-    <meta name="description" content="TBS Machine Learning Club">
-    <meta name="author" content="James H.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div>
-            <nav class="navbar navbar-expand-sm navbar-expand-md navbar-inverse bg-dark navbar-dark">
-                <a class="navbar-brand" href="index.html">
-                    <img src="rsc/logo.jpg" class="rounded-circle" alt="Logo" style="width:35px;">
-                    <span class="logo">TBS ML</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
-                    <li class="navbar-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link active-page" href="#">Latest</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="notes.html">Notes</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="presentations.html">Presentations</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="resources.html">Resources</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                </ul>
-            </nav>
+    <body>
+        <div class="container-fluid">
+            <!-- nav bar -->
+            <div>
+                <nav class="navbar navbar-expand-sm navbar-expand-md navbar-inverse bg-dark navbar-dark">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="rsc/logo.jpg" class="rounded-circle" alt="Logo" style="width:35px;">
+                        <span class="logo">TBS ML</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
+                        <li class="navbar-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link active-page" href="#">Latest</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="notes.html">Notes</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="presentations.html">Presentations</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="display-4">"LATEST"</div>
+            <!-- carousel with uniform images and clickable hover captions -->
+            <div class="c-div">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#0">
+                                <img src="rsc/mit-cough.jpg" alt="covidml" class="carousel-img">
+                                <span class="cpt">
+                                    Artificial intelligence model detects asymptomatic Covid-19 
+                                    infections through cellphone-recorded coughs - MIT News
+                                </span>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#1">
+                                <img src="rsc/waymo.png" alt="waymo" class="carousel-img">
+                                <span class="cpt">Actual Self-Driving Taxis Are Hitting City Streets - Medium</span>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#2">
+                                <img src="rsc/vae.png" alt="vae" class="carousel-img">
+                                <span class="cpt">Featured Paper: Auto-Encoding Variational Bayes - Kingma, Welling</span>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#3">
+                                <img src="rsc/deepfake.jpg" alt="deepfake" class="carousel-img">
+                                <span class="cpt">Deepfakes Are Becoming the Hot New Corporate Training Tool - Wired</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <h6 class="tcenter">Hover over image for caption</h6>
+            </div>
+            <!-- articles -->
+            <div class="section bg-light">
+                <div class="row">
+                    <!-- spacing for readability -->
+                    <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-8">
+                        <div class="article card" id="3">
+                            <div class="card-header">
+                                Deepfakes Are Becoming the Hot New Corporate Training Tool
+                            </div>
+                            <div class="card-body">
+                                THIS MONTH, ADVERTISING giant WPP will send unusual corporate training videos to tens of thousands of employees
+                                worldwide. A presenter will speak in the recipient’s language and address them by name, while explaining some basic
+                                concepts in artificial intelligence. The videos themselves will be powerful demonstrations of what AI can do: The face,
+                                and the words it speaks, will be synthesized by software.
+                                <br />
+                                <br />
+                                WPP doesn’t bill them as such, but its synthetic training videos might be called deepfakes, a loose term applied to
+                                images or videos generated using AI that look real. Although best known as tools of harassment, porn, or duplicity,
+                                image-generating AI is now being used by major corporations for such anodyne purposes as corporate training.
+                            </div>
+                            <div class="card-footer">
+                                Jul 7, 2020, 
+                                <a href="https://www.wired.com/story/covid-drives-real-businesses-deepfake-technology/">
+                                    https://www.wired.com/story/covid-drives-real-businesses-deepfake-technology/
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-8">
+                        <div class="article card" id="2">
+                            <div class="card-header">
+                                Featured Paper: Auto-Encoding Variational Bayes - Kingma, Welling
+                            </div>
+                            <div class="card-body">
+                                Abstract: How can we perform efficient approximate inference and learning with directed probabilistic models
+                                whose continuous latent variables and/or parameters have intractable posterior distributions? The
+                                variational Bayesian (VB) approach involves the optimization of an approximation to the intractable
+                                posterior. Unfortunately, the common mean-field approach requires analytical solutions of expectations w.r.t. the
+                                approximate posterior, which are also intractable in the general case. We show how a
+                                reparameterization of the variational lower bound yields a simple differentiable unbiased estimator
+                                of the lower bound; this SGVB (Stochastic Gradient Variational Bayes) estimator can be used for efficient approximate
+                                posterior inference in almost any model with continuous latent variables and/or
+                                parameters, and is straightforward to optimize using standard stochastic gradient ascent techniques.
+                            </div>
+                            <div class="card-footer">
+                                <a href=https://arxiv.org/pdf/1312.6114.pdf>
+                                    https://arxiv.org/pdf/1312.6114.pdf
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-8">
+                        <div class="article card" id="1">
+                            <div class="card-header">
+                                Actual Self-Driving Taxis Are Hitting City Streets
+                            </div>
+                            <div class="card-body">
+                                Waymo, the driverless car company spun out of Google in 2016, is finally fulfilling its promise to bring truly
+                                autonomous cars onto city streets.
+                                <br />
+                                <br />
+                                The company announced Thursday, October 8, that anyone in a 50-mile swath of Phoenix, Arizona, would be able to hail a
+                                fully driverless car in the “near term.”
+                            </div>
+                            <div class="card-footer">
+                                Oct 8, 2020,
+                                <a href="https://onezero.medium.com/actual-self-driving-taxis-are-hitting-city-streets-db41095d8a02">
+                                    https://onezero.medium.com/actual-self-driving-taxis-are-hitting-city-streets-db41095d8a02
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-8">
+                        <div class="article card" id="0">
+                            <div class="card-header">
+                                Artificial intelligence model detects asymptomatic Covid-19 infections through cellphone-recorded coughs
+                            </div>
+                            <div class="card-body">
+                                Asymptomatic people who are infected with Covid-19 exhibit, by definition, no discernible physical symptoms of the
+                                disease. They are thus less likely to seek out testing for the virus, and could unknowingly spread the infection to
+                                others.
+                                <br />
+                                <br />
+                                But it seems those who are asymptomatic may not be entirely free of changes wrought by the virus. MIT researchers have
+                                now found that people who are asymptomatic may differ from healthy individuals in the way that they cough. These
+                                differences are not decipherable to the human ear. But it turns out that they can be picked up by artificial
+                                intelligence...
+                            </div>
+                            <div class="card-footer">
+                                Oct 29, 2020, 
+                                <a href="https://news.mit.edu/2020/covid-19-cough-cellphone-detection-1029">
+                                    https://news.mit.edu/2020/covid-19-cough-cellphone-detection-1029
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">&nbsp;</div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="section footer">
+                <div class="row">
+                    <img src="rsc/dark logo.jpg" alt="dark logo" width="80px" class="logo">
+                </div>
+                <div class="row">
+                    <a href="https://www.instagram.com/tbs_machinelearning/" class="logo">
+                        <img src="rsc/instagram_logo.png" title="instagram" alt="IG" width=90px>
+                    </a>
+                    <a href="mailto:james.hou.23@bishops.com" class="logo">
+                        <img src="rsc/email_logo.png" title="email" alt="email" width=90px>
+                    </a>
+                    <a href="https://forms.gle/7LkFxRMY7H7yiRVx9" class="logo">
+                        <img src="rsc/join_logo.png" title="sign up" alt="join" width=90px>
+                    </a>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="m-auto">
+                        TBS Machine Learning 2020-2021 - A Bishop's Club
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="display-4">"LATEST"</div>
-        <div class="c-div">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                    <li data-target="#demo" data-slide-to="3"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#0">
-                            <img src="rsc/dummy.jpg" alt="dummy" class="carousel-img">
-                            <span class="cpt">ARTICLE 1 DUMMY CAPTION</span>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#1">
-                            <img src="rsc/dummy.jpg" alt="dummy" class="carousel-img">
-                            <span class="cpt">ARTICLE 2 DUMMY CAPTION</span>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#2">
-                            <img src="rsc/dummy.jpg" alt="dummy" class="carousel-img">
-                            <span class="cpt">ARTICLE 3 DUMMY CAPTION</span>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#3">
-                            <img src="rsc/dummy.jpg" alt="dummy" class="carousel-img">
-                            <span class="cpt">ARTICLE 4 DUMMY CAPTION</span>
-                        </a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-        </div>
-
-        <div class="section bg-light">
-            <div class="row">
-                <div class="col-1">&nbsp;</div>
-                <div class="col-10">
-                    <div class="article card" id="3">
-                        <div class="card-header">
-                            Article 4
-                        </div>
-                        <div class="card-body">
-                            His palms are sweaty, knees weak, arms are heavy
-                            There's vomit on his sweater already, mom's spaghetti
-                            He's nervous, but on the surface he looks calm and ready
-                            To drop bombs, but he keeps on forgettin'
-                            What he wrote down, the whole crowd goes so loud
-                            He opens his mouth, but the words won't come out
-                        </div>
-                        <div class="card-footer">
-                            link/date blah blah
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-1">&nbsp;</div>
-                <div class="col-10">
-                    <div class="article card" id="2">
-                        <div class="card-header">
-                            Article 3
-                        </div>
-                        <div class="card-body">
-                            His palms are sweaty, knees weak, arms are heavy
-                            There's vomit on his sweater already, mom's spaghetti
-                            He's nervous, but on the surface he looks calm and ready
-                            To drop bombs, but he keeps on forgettin'
-                            What he wrote down, the whole crowd goes so loud
-                            He opens his mouth, but the words won't come out
-                        </div>
-                        <div class="card-footer">
-                            link/date blah blah
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-1">&nbsp;</div>
-                <div class="col-10">
-                    <div class="article card" id="1">
-                        <div class="card-header">
-                            Article 2
-                        </div>
-                        <div class="card-body">
-                            His palms are sweaty, knees weak, arms are heavy
-                            There's vomit on his sweater already, mom's spaghetti
-                            He's nervous, but on the surface he looks calm and ready
-                            To drop bombs, but he keeps on forgettin'
-                            What he wrote down, the whole crowd goes so loud
-                            He opens his mouth, but the words won't come out
-                        </div>
-                        <div class="card-footer">
-                            link/date blah blah
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-1">&nbsp;</div>
-                <div class="col-10">
-                    <div class="article card" id="0">
-                        <div class="card-header">
-                            Article 1
-                        </div>
-                        <div class="card-body">
-                            His palms are sweaty, knees weak, arms are heavy
-                            There's vomit on his sweater already, mom's spaghetti
-                            He's nervous, but on the surface he looks calm and ready
-                            To drop bombs, but he keeps on forgettin'
-                            What he wrote down, the whole crowd goes so loud
-                            He opens his mouth, but the words won't come out
-                        </div>
-                        <div class="card-footer">
-                            link/date blah blah
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1">&nbsp;</div>
-            </div>
-        </div>
-        <div class="section footer">
-            <div class="row">
-                <img src="rsc/dark logo.jpg" alt="dark logo" width="80px" class="logo">
-            </div>
-            <div class="row">
-                <a href="https://www.instagram.com/tbs_machinelearning/" class="logo">
-                    <img src="rsc/instagram_logo.png" title="instagram" alt="IG" width=90px>
-                </a>
-                <a href="mailto:james.hou.23@bishops.com" class="logo">
-                    <img src="rsc/email_logo.png" title="email" alt="email" width=90px>
-                </a>
-                <a href="https://forms.gle/7LkFxRMY7H7yiRVx9" class="logo">
-                    <img src="rsc/join_logo.png" title="sign up" alt="join" width=90px>
-                </a>
-            </div>
-            <br />
-            <div class="row">
-                <div class="m-auto">
-                    TBS Machine Learning 2020-2021 - A Bishop's Club
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 
 </html>

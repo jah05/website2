@@ -1,183 +1,186 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>ML Club - About Us</title>
 
-<head>
-    <title>TBS Machine Learning Club</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="icon" href="rsc/favicon.ico">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="styles.css" />
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="keywords" content="ML, AI, Club, Bishops, TBS">
+        <meta name="description" content="TBS Machine Learning Club">
+        <meta name="author" content="James H.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-    <link rel="stylesheet" href="styles.css" />
-
-    <meta charset="utf-8">
-    <meta name="keywords" content="ML, AI, Club, Bishops, TBS">
-    <meta name="description" content="TBS Machine Learning Club">
-    <meta name="author" content="James H.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div>
-            <nav class="navbar navbar-expand-sm navbar-expand-md navbar-inverse bg-dark navbar-dark">
-                <a class="navbar-brand" href="index.html">
-                    <img src="rsc/logo.jpg" class="rounded-circle" alt="Logo" style="width:35px;">
-                    <span class="logo">TBS ML</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
-                    <li class="navbar-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="latest.html">Latest</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="notes.html">Notes</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="presentations.html">Presentations</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="resources.html">Resources</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link active-page" href="#">About Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="display-4">"ABOUT US"</div>
-        <div class="section bg-light">
-            <h1 class="tcenter" style="font-weight:bold">OUR WORK</h1>
-            <div class="row">
-                <div class="col-xl-3 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
-                <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10 ml-auto mr-auto">
-                    <div class="tcenter" style="color: #777777;">
-                        This club’s goal is to introduce the Bishop’s community to the wide variety of topics (e.g. computer vision, natural
-                        language processing), techniques and applications in the field of Machine Learning through weekly lectures. We will
-                        offer fun and engaging topics including, Neural Networks, Convolutional Neural Networks, Linear Classifiers, Linear
-                        Algebra, GANs, VAEs and more. We also aim to participate in online competitions and ultimately apply the acquired
-                        knowledge to solving real world problems. The club plans to invite guest speakers from the industry and academic
-                        research institutes to provide state of the art insight on the field. The club brings a hands on opportunity for
-                        students who are interested but unfamiliar with the field to explore the area of Machine Learning.
+    <body>
+        <div class="container-fluid">
+            <!-- navigation bar -->
+            <div> 
+                <nav class="navbar navbar-expand-sm navbar-expand-md navbar-inverse bg-dark navbar-dark">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="rsc/logo.jpg" class="rounded-circle" alt="Logo" style="width:35px;">
+                        <span class="logo">TBS ML</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
+                        <li class="navbar-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="latest.html">Latest</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="notes.html">Notes</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="presentations.html">Presentations</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link active-page" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- About us section -->
+            <div class="display-4">"ABOUT US"</div>
+            <div class="section bg-light">
+                <h1 class="tcenter" style="font-weight:bold">OUR WORK</h1>
+                <div class="row">
+                    <!-- spacing for better readability -->
+                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
+                    <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10 ml-auto mr-auto">
+                        <div class="tcenter" style="color: #777777;">
+                            This club’s goal is to introduce the Bishop’s community to the wide variety of topics (e.g. computer vision, natural
+                            language processing), techniques and applications in the field of Machine Learning through weekly lectures. We will
+                            offer fun and engaging topics including, Neural Networks, Convolutional Neural Networks, Linear Classifiers, Linear
+                            Algebra, GANs, VAEs and more. We also aim to participate in online competitions and ultimately apply the acquired
+                            knowledge to solving real world problems. The club plans to invite guest speakers from the industry and academic
+                            research institutes to provide state of the art insight on the field. The club brings a hands on opportunity for
+                            students who are interested but unfamiliar with the field to explore the area of Machine Learning.
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
+                </div>
+            </div>
+            <!-- person cards -->
+            <div class="bg-gray section name-card">
+                <div class="name-title">James Hou - President, Founder</div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div>I'm a sophomore at the Bishop's School.</div>
+                        <div>
+                            Email: <a href="mailto:james.hou.23@bishops.com">james.hou.23@bishops.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2">
+                        <img src="rsc/james.jpg" alt="pfp" class="pfp">
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-2 col-md-2 col-sm-1">&nbsp;</div>
             </div>
-        </div>
-        <div class="bg-gray section name-card">
-            <div class="name-title">James Hou - President, Founder</div>
-            <div class="row">
-                <div class="col-md-9">
-                    <div>I'm a sophomore at the Bishop's School.</div>
-                    <div>
-                        Email: <a href="mailto:james.hou.23@bishops.com">james.hou.23@bishops.com</a>
+            <div class="bg-light section name-card">
+                <div class="name-title">Daxton Gutekunst - Co-Founder</div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div>I'm a sophomore at the Bishop's School.</div>
+                        <div>
+                            Email: <a href="mailto:dax.gutekunst.23@bishops.com">dax.gutekunst.23@bishops.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2">
+                        <img src="rsc/dax.jpg" alt="pfp" class="pfp">
                     </div>
                 </div>
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-2">
-                    <img src="rsc/james.jpg" alt="pfp" class="pfp">
+            </div>
+            <h1>Previous Leadership</h1>
+            <div class="bg-gray section">
+                <div class="name-title">John Doe</div>
+                <div class="row">
+                    <div class="col-md-9">
+                        N/A
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
                 </div>
             </div>
-        </div>
-        <div class="bg-light section name-card">
-            <div class="name-title">Daxton Gutekunst - Co-Founder</div>
-            <div class="row">
-                <div class="col-md-9">
-                    <div>I'm a sophomore at the Bishop's School.</div>
-                    <div>
-                        Email: <a href="mailto:dax.gutekunst.23@bishops.com">james.hou.23@bishops.com</a>
+            <!-- <div class="bg-gray section">
+                <div class="name-title">John Doe</div>
+                <div class="row">
+                    <div class="col-md-9">
+                        name, description, I'm built different
+                        email
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2">
+                        <img src="rsc/dummy.jpg" alt="pfp" class="pfp">
                     </div>
                 </div>
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-2">
-                    <img src="rsc/dax.jpg" alt="pfp" class="pfp">
+            </div>
+            <div class="bg-light section">
+                <div class="name-title">John Doe</div>
+                <div class="row">
+                    <div class="col-md-9">
+                        name, description, I'm built different
+                        email
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2">
+                        <img src="rsc/dummy.jpg" alt="pfp" class="pfp">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray section">
+                <div class="name-title">John Doe</div>
+                <div class="row">
+                    <div class="col-md-9">
+                        name, description, I'm built different
+                        email
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2">
+                        <img src="rsc/dummy.jpg" alt="pfp" class="pfp">
+                    </div>
+                </div>
+            </div> -->
+            <!-- footer -->
+            <div class="section footer">
+                <div class="row">
+                    <img src="rsc/dark logo.jpg" alt="dark logo" width="80px" class="logo">
+                </div>
+                <div class="row">
+                    <a href="https://www.instagram.com/tbs_machinelearning/" class="logo">
+                        <img src="rsc/instagram_logo.png" title="instagram" alt="IG" width=90px>
+                    </a>
+                    <a href="mailto:james.hou.23@bishops.com" class="logo">
+                        <img src="rsc/email_logo.png" title="email" alt="email" width=90px>
+                    </a>
+                    <a href="https://forms.gle/7LkFxRMY7H7yiRVx9" class="logo">
+                        <img src="rsc/join_logo.png" title="sign up" alt="join" width=90px>
+                    </a>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="m-auto">
+                        TBS Machine Learning 2020-2021 - A Bishop's Club
+                    </div>
                 </div>
             </div>
         </div>
-        <h1>Previous Leadership</h1>
-        <div class="bg-gray section">
-            <div class="name-title">John Doe</div>
-            <div class="row">
-                <div class="col-md-9">
-                    N/A
-                </div>
-                <div class="col-md-1">&nbsp;</div>
-            </div>
-        </div>
-        <!-- <div class="bg-gray section">
-            <div class="name-title">John Doe</div>
-            <div class="row">
-                <div class="col-md-9">
-                    name, description, I'm built different
-                    email
-                </div>
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-2">
-                    <img src="rsc/dummy.jpg" alt="pfp" class="pfp">
-                </div>
-            </div>
-        </div>
-        <div class="bg-light section">
-            <div class="name-title">John Doe</div>
-            <div class="row">
-                <div class="col-md-9">
-                    name, description, I'm built different
-                    email
-                </div>
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-2">
-                    <img src="rsc/dummy.jpg" alt="pfp" class="pfp">
-                </div>
-            </div>
-        </div>
-        <div class="bg-gray section">
-            <div class="name-title">John Doe</div>
-            <div class="row">
-                <div class="col-md-9">
-                    name, description, I'm built different
-                    email
-                </div>
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-2">
-                    <img src="rsc/dummy.jpg" alt="pfp" class="pfp">
-                </div>
-            </div>
-        </div> -->
-        <div class="section footer">
-            <div class="row">
-                <img src="rsc/dark logo.jpg" alt="dark logo" width="80px" class="logo">
-            </div>
-            <div class="row">
-                <a href="https://www.instagram.com/tbs_machinelearning/" class="logo">
-                    <img src="rsc/instagram_logo.png" title="instagram" alt="IG" width=90px>
-                </a>
-                <a href="mailto:james.hou.23@bishops.com" class="logo">
-                    <img src="rsc/email_logo.png" title="email" alt="email" width=90px>
-                </a>
-                <a href="https://forms.gle/7LkFxRMY7H7yiRVx9" class="logo">
-                    <img src="rsc/join_logo.png" title="sign up" alt="join" width=90px>
-                </a>
-            </div>
-            <br />
-            <div class="row">
-                <div class="m-auto">
-                    TBS Machine Learning 2020-2021 - A Bishop's Club
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>

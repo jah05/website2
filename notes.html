@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TBS Machine Learning Club</title>
+        <title>ML Club - Notes</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+        <link rel="icon" href="rsc/favicon.ico">
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -24,6 +24,7 @@
     </head>
     <body>
         <div class="container-fluid">
+            <!-- nav bar -->
             <div>
                 <nav class="navbar navbar-expand-sm navbar-expand-md navbar-inverse bg-dark navbar-dark">
                     <a class="navbar-brand" href="index.html">
@@ -56,46 +57,166 @@
                 </nav>
             </div>
             <div class="display-4">"NOTES"</div>
+            <!-- Table of Contents -->
             <div class="bg-gray ml-5 mr-5 tbdiv">
                 <h3>Table of Contents</h3>
                 <ul>
-                    <li><a href="#cp1">1 Topic</a></li>
+                    <li><a href="#cp1">1. Python</a></li>
                     <ul>
-                        <li><a href="#cp1.1">1.1 Subtopic</a></li>
-                        <li><a href="#cp1.2">1.2 Subtopic</a></li>
+                        <li><a href="#cp1.1">1.1 Installing Python 3.7</a></li>
                     </ul>
-                    <li><a href="#cp2">2 Topic</a></li>
+                    <li><a href="#cp2">2. Libraries</a></li>
                     <ul>
-                        <li><a href="#cp2.1">2.1 Subtopic</a></li>
-                        <li><a href="#cp2.2">2.2 Subtopic</a></li>
+                        <li><a href="#cp2.1">2.1 Numpy</a></li>
+                        <li><a href="#cp2.2">2.2 TensorFlow</a></li>
+                        <li><a href="#cp2.3">2.3 PyTorch</a></li>
                     </ul>
-                    <li><a href="#cp3">3 Topic</a></li>
+                    <!-- <li><a href="#cp3">3. Topic</a></li>
                     <ul>
                         <li><a href="#cp3.1">3.1 Subtopic</a></li>
                         <li><a href="#cp3.2">3.2 Subtopic</a></li>
-                    </ul>
+                    </ul> -->
                 </ul>
             </div>
+            <br />
+            <!-- notes section -->
             <div class="section bg-light container">
-                <h3 id="cp1">Chapter 1</h3>
-                <div>Intro...</div>
-                <h4 id="cp1.1">1.1</h4>
-                <div>Content</div>
-                <h4 id="cp1.2">1.2</h4>
-                <div>Content</div>
-                <h3 id="cp2">Chapter 2</h3>
-                <div>Intro...</div>
-                <h4 id="cp2.1">2.1</h4>
-                <div>Content</div>
-                <h4 id="cp2.2">2.2</h4>
-                <div>Content</div>
-                <h3 id="cp3">Chapter 3</h3>
-                <div>Intro...</div>
-                <h4 id="cp3.1">3.1</h4>
-                <div>Content</div>
-                <h4 id="cp3.2">3.2</h4>
-                <div>Content</div>
+                <div class="col-8">
+                    <!-- headers where the table of contents is linked to -->
+                    <h3 id="cp1">Chapter 1 - Python</h3> 
+                    <div>
+                        Reference: <a href="https://wiki.python.org/moin/BeginnersGuide/Download">
+                        https://wiki.python.org/moin/BeginnersGuide/Download</a>
+                    </div>
+                    <div>
+                        Python is the most popular programming language that data scientists and machine learning experts/hobbyists use. Many
+                        libraries and projects are developed using this language and therefore, it is important for us to install it. If you’ve
+                        already installed it, please make sure you have Python 3.7 because others are either less up to date or too buggy (3.8).
+                    </div>
+                    <br />
+                    <h4 id="cp1.1">Installing Python 3.7</h4>
+                    <div>
+                        Instructions:
+                        <ol>
+                            <li>Go to <a href="https://www.python.org/downloads/">
+                                https://www.python.org/downloads/</a>
+                            </li>
+                            <li>
+                                Scroll down to <strong>Looking for a specific release?</strong>
+                                <img src="rsc/installp.jpg" alt="installation"/>
+                            </li>
+                            <li>
+                                Click on download for 3.7.9 (it will redirect you to a page)
+                            </li>
+                            <li>
+                                Scroll down to Files and select which one applies to your machine
+                            </li>
+                            <li>
+                                Click on the downloaded file
+                            </li>
+                            <li>
+                                When installing make sure to click <strong>Add Python 3.7 to PATH</strong>
+                                <img src="rsc/installer.jpg" alt="installer" />
+                            </li>
+                        </ol>
+                    </div>
+                    <br />
+                    <h3 id="cp2">Chapter 2 - Installing Libraries</h3>
+                    <div>
+                        When building and training models, libraries such as PyTorch,
+                        Tensorflow, Pandas and Numpy are very useful and allow for 
+                        rapid prototyping and greater flexibility.
+                    </div>
+                    <br />
+                    <h4 id="cp2.1">2.1 - Numpy</h4>
+                    <div>
+                        Reference <a href="https://numpy.org/install/ ">https://numpy.org/install/</a>
+                    </div>
+                    <div>
+                        Numpy is a data structure library that makes matrix/array computations efficient. It is the backbone of many libraries
+                        that we will use and is necessary for them to work.
+                        <br />
+                        <br />
+                        Instructions:
+                        <ol>
+                            <li>Go to <strong>Command Prompt/Terminal</strong></li>
+                            <li>Type in <strong>pip install numpy</strong></li>
+                        </ol>
+                    </div>
+                    <br />
+                    <h4 id="cp2.2">2.2 - TensorFlow</h4>
+                    <div>
+                        Reference: <a href="https://www.tensorflow.org/ ">
+                        https://www.tensorflow.org/</a>
+                        <br />
+                        TensorFlow is another popular machine learning library that has implemented many useful functions for you to use.
+                        <br />
+                        <br />
+                        Instructions:
+                        <ol>
+                            <li>
+                                Go to <strong>Terminal/Command Prompt</strong>
+                            </li>
+                            <li>
+                                Copy & Paste <strong>pip3 install --user --upgrade tensorflow</strong>
+                            </li>
+                            <li>Hit <strong>Enter</strong></li>
+                            <li>Copy & Paste <strong>python3 -c</strong> 
+                                <span style="color:green">"import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"</span>
+                            </li>
+                            <li>
+                                Hit enter to verify installation
+                            </li>
+                        </ol>
+                    </div>
+                    <br />
+                    <h4 id="cp2.3">2.3 - PyTorch</h4>
+                    <div>
+                        Reference: <a href="https://pytorch.org">https://pytorch.org/</a>
+                        <br />
+                        Pytorch is a popular machine learning library that has implemented many useful functions for you to use.
+                        <br />
+                        <br />
+                        Instructions:
+                        <ol>
+                            <li>Go to <a href="https://pytorch.org">https://pytorch.org/</a></li>
+                            <li>Scroll down <strong>Install Pytorch</strong></li>
+                            <li>
+                                Keep default settings but...
+                                <br />
+                                <img src="rsc/pytorch.jpg" alt="pytorch" style="max-width: 100%;" />
+                            </li>
+                            <li>Change <strong>Your OS</strong> to whichever OS applies</li>
+                            <li>Change <strong>Package</strong> to Pip</li>
+                            <li>
+                                If you have a GPU that is listed in 
+                                <a href="https://developer.nvidia.com/cuda-gpus">
+                                    https://developer.nvidia.com/cuda-gpus
+                                </a> then follow the instructions on
+                                <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html">
+                                    https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
+                                </a> and change <strong>CUDA</strong> to whichever CUDA version you have 
+                                (feel free to let me know if you do have it). Otherwise leave that alone.
+                            </li>
+                            <li>Copy the text in <strong>Run this Command:</strong></li>
+                            <li>Paste into <strong>Command Prompt/Terminal</strong>.</li>
+                            <li>Press <strong>Enter</strong></li>
+                        </ol>
+                    </div>
+                    <br />
+                    <!-- <h3 id="cp3">Chapter 3</h3>
+                    <div>Intro...</div>
+                    <br />
+                    <h4 id="cp3.1">3.1</h4>
+                    <div>Content</div>
+                    <br />
+                    <h4 id="cp3.2">3.2</h4>
+                    <div>Content</div> -->
+                    <br />
+                </div>
             </div>
+            <br />
+            <!-- footer -->
             <div class="section footer">
                 <div class="row">
                     <img src="rsc/dark logo.jpg" alt="dark logo" width="80px" class="logo">
